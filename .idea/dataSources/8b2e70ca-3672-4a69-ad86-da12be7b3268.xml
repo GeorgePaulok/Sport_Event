@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MYSQL-mysql@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sakila"/>
+    <schema id="7" parent="1" name="world"/>
+    <table id="8" parent="2" name="event"/>
+    <table id="9" parent="2" name="group"/>
+    <table id="10" parent="2" name="player_basic_info"/>
+    <table id="11" parent="2" name="player_info"/>
+    <table id="12" parent="2" name="sport_event"/>
+    <table id="13" parent="2" name="team"/>
+    <table id="14" parent="2" name="user"/>
+    <column id="15" parent="8" name="Event_Name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="16" parent="8" name="Sport_Event_Name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="17" parent="9" name="Group_Name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="18" parent="9" name="Sport_Event_Name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="19" parent="10" name="Team_Name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="20" parent="10" name="Player_Name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="21" parent="10" name="Sex">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="22" parent="10" name="Height">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="23" parent="10" name="Weight">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="24" parent="10" name="ID">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="25" parent="10" name="Player_Add">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="26" parent="10" name="Player_Photo">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="27" parent="10" name="Sports_Event">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="28" parent="10" name="Player_Number">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="29" parent="11" name="Team_name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="11" name="Sex">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="31" parent="11" name="Height">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="32" parent="11" name="Weight">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="33" parent="11" name="ID">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="34" parent="11" name="Event1">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="35" parent="11" name="Event2">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="36" parent="11" name="Event3">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="37" parent="11" name="Event4">
+      <Position>12</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="38" parent="11" name="Event5">
+      <Position>13</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="39" parent="11" name="Player_Name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="40" parent="11" name="Player_Add">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="41" parent="11" name="Sport_Event_Name">
+      <Position>14</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="42" parent="11" name="Player_Number">
+      <Position>15</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="43" parent="11" name="Event_Group">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="44" parent="11" name="Player_Photo">
+      <Position>16</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="45" parent="12" name="Sport_Event_Name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="46" parent="12" name="Status">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="47" parent="13" name="Team_Name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="48" parent="13" name="Commander">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="49" parent="13" name="Leader">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="50" parent="13" name="Coach">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="51" parent="13" name="Staff">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="52" parent="13" name="Doctor">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="53" parent="13" name="Contact">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="54" parent="13" name="No">
+      <Position>8</Position>
+      <DataType>int(255)|0</DataType>
+    </column>
+    <column id="55" parent="13" name="Sport_Event_Name">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="56" parent="13" name="Password">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="57" parent="14" name="username">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="58" parent="14" name="password">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="59" parent="14" name="email">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
