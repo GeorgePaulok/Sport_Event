@@ -1,2 +1,2 @@
 # Sport_Event
-This is a project that provides the players register and manegement. 
+This is a project that provides the players registration and manegement service. 
