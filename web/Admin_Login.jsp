@@ -13,14 +13,14 @@
     <link href="web_resources/css/style1.css" rel='stylesheet' type='text/css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+</head>s
 
 <body>
 <div class="main">
     <form action = loginServlet method = "post">
         <div class="lable-2">
-            <input type="text" name = "username" class="text" value="用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '用户名';}">
-            <input type="password" name = "password"class="text" value="密码" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '密码';}">
+            <label><input type="text" name = "username" class="text" value="用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '用户名';}"></label>
+            <label><input type="password" name = "password" class="text" value="密码" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '密码';}"></label>
         </div>
         <div class="submit">
             <input type="submit"  value="login" >
