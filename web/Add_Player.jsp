@@ -23,17 +23,14 @@
     function hideURLbar() {
         window.scrollTo(0, 1);
     } </script>
+    <title>运动员注册</title>
 </head>
 
 
 <body>
 <%
-    String temp_team_name = request.getParameter("team_name");
-    String team_name = null;
-    if(temp_team_name!=null){
-        team_name = new String(temp_team_name.getBytes("ISO-8859-1"),"utf-8");
-        System.out.println(team_name);
-    }
+    String team_name = request.getParameter("team_name");
+    System.out.println(team_name);
 %>
 <div class="main">
     <div class="header">
@@ -70,6 +67,18 @@
             </li>
             <li>
                 <input type="text" name="add" placeholder="备注"/>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <input type="text" name="class1" placeholder="类别1"/>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <input type="text" name="class2" placeholder="类别2"/>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <input type="text" name="class3" placeholder="类别3"/>
                 <div class="clear"></div>
             </li>
             <li>

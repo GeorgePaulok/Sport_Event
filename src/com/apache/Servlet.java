@@ -24,26 +24,13 @@ public class Servlet extends javax.servlet.http.HttpServlet {
             throws ServletException, IOException {
         Connection connection = null;
         PreparedStatement ps = null;
-        ResultSet set = JDBCTools.Select("SELECT * FROM sport_event");
-        String Sports_Event = null;
-        try {
-            while(set.next()){
-                if(set.getString(2).equals("1")){
-                    Sports_Event = set.getString(1);
-                    break;
-                }
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
         try {
             connection = JDBCTools.GetConnection();
-            String s = "INSERT INTO test.player_basic_info (Team_Name, Player_Name, Sex, Height, Weight, ID, Player_Add, Sports_Event,Player_Number,Player_Photo)"+
-                    "VALUES (?,?,?,?,?,?,?,?,?,?)";
+            String s = "INSERT INTO test.player_basic_info (Team_Name, Player_Name, Sex, Height, Weight, ID, Player_Add, Class1,Class2,Class3,Player_Number,Player_Photo)"+
+                    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
             ps = (PreparedStatement) connection.prepareStatement(s);
             request.setCharacterEncoding("utf-8");
-            String temp_team_name = request.getParameter("team_name");
-            String team_name = new String(temp_team_name.getBytes("ISO-8859-1"),"utf-8");
+            String team_name = request.getParameter("team_name");
             ps.setString(1,team_name);
 //            ps.setString(1, request.getParameter("team_name"));
 //            ps.setString(2, request.getParameter("name"));
@@ -123,9 +110,8 @@ public class Servlet extends javax.servlet.http.HttpServlet {
                     out.close();
                 }
             }
-            ps.setString(8, Sports_Event);
-            ps.setString(9, ""+Player_Number); Player_Number++;
-            ps.setString(10, path+"/"+filename);
+            ps.setString(11, ""+Player_Number); Player_Number++;
+            ps.setString(12, path+"/"+filename);
             ps.executeUpdate();
         } catch (FileUploadException e) {
             e.printStackTrace();

@@ -30,7 +30,7 @@ public class Team_Login_Servlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        request.getRequestDispatcher("/WEB-INF/Team_Management.jsp").forward(request,response);
+        request.getRequestDispatcher("/WEB-INF/Team_Main_Menu.jsp").forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

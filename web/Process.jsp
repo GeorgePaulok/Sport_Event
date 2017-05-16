@@ -24,6 +24,7 @@
     }else{
         out.println("<form action =Sports_Event_Add_Servlet method = 'post'>");
         out.println("<input type = 'text' name = 'sports_event' placeholder = '运动会名称' required>");
+        out.println("<input type = 'text' name = 'sports_event_class' placeholder = '大类' required>");
         out.println("<input type = 'submit' value = '提交'>");
     }
 %>
