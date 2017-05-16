@@ -17,14 +17,13 @@
     <%
         request.setCharacterEncoding("utf-8");
         String team_name = request.getParameter("team_name");
-        String temp_team_name = new String(team_name.getBytes("ISO-8859-1"),"utf-8");
         exportExcel e = new exportExcel();
         try {
             OutputStream output = response.getOutputStream();
             response.reset();
             response.setContentType("application/octet-stream");
             response.setHeader("Content-Disposition", "attachment; filename="+team_name+".zip");
-            e.Export(output,temp_team_name);
+            e.Export(output,team_name);
             output.close();
         } catch (IOException ex) {
             ex.printStackTrace();

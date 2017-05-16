@@ -15,9 +15,8 @@ public class Delete_Player_Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         String player_name = request.getParameter("player_name");
-        String temp_player_name = new String(player_name.getBytes("ISO-8859-1"),"utf-8");
-        System.out.println(temp_player_name);
-        JDBCTools.Update("DELETE FROM player_info WHERE Player_Name = '"+temp_player_name+"'");
+        System.out.println(player_name);
+        JDBCTools.Update("DELETE FROM player_basic_info WHERE Player_Name = '"+player_name+"'");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -22,12 +22,14 @@ public class Sports_Event_Add_Servlet extends HttpServlet {
         PreparedStatement ps = null;
         try {
             connection = JDBCTools.GetConnection();
-            String s = "INSERT INTO test.sport_event (Sport_Event_Name,Status) VALUES(?,?)";
+            String s = "INSERT INTO test.sport_event (Sport_Event_Name,Status,Class) VALUES(?,?,?)";
             ps = (PreparedStatement) connection.prepareStatement(s);
             request.setCharacterEncoding("utf-8");
             String Sport_Event = request.getParameter("sports_event");
+            String Class = request.getParameter("sports_event_class");
             ps.setString(1,Sport_Event);
             ps.setString(2,"1");
+            ps.setString(3,Class);
             ps.executeUpdate();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
